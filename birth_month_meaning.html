@@ -1,206 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>	
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Bernadette Engleman">
-    <meta http-equiv="refresh" content="30">
-    <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
-	<link rel="stylesheet" href="../css/bootstrap.css">
-  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="../js/jquery-1.11.2.min.js"></script> 
-	<script src="../js/bootstrap.min.js"></script>
-    <title>Birth Month Meaning</title>    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Birth Month Meaning</title>
 </head>
 
-<body class="Site">
+<body>
 
-<!-- Navigation bar starts here-->
-<nav class="navbar navbar-default navbar-fixed-top">
-  	<div class="container-fluid">
-    <div class="navbar-header">   
-      <ul class="nav navbar-nav">
-        	<li><a href="../index.html">
-            	<span class="glyphicon glyphicon-home"></span> Home</a>
-            </li>
-      	</ul>
-	</div>
-	</div>
-</nav>
-<!-- Navigation bar ends here-->
+<main id="months">
+    <!-- Home -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://www.bernadetteengleman.com/">Home</a><br>
+            </div>
+        </div>
+    </nav>
 
-<section class="Site-content">
+    <div class="container-fluid">
+        <div class="row content">
 
-<!-- Content starts here-->
-	<div class="container">
-    
-    	<p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <h1 class="text-center">Choose Your Birth Month</h1>
+            <!-- Side bar -->
+            <div class="col-sm-3 sidenav text-center">
 
-  	                            
-    	<div class="table-responsive">
-			<table class="table centerTable bmm"> 
- 				<tbody>
+                <h3>Select Your Birth Month:</h3>
 
-      			<tr>
-        			<td><img src="January.jpg" alt="January" style="width:100px" id="Jan"></td>
-        			<td><img src="Feb.jpg" alt="February" style="width:100px" id="Feb"></td>
-        			<td><img src="Mar.jpg" alt="March" style="width:100px" id="Mar"></td> 
-        			<td><img src="Apr.jpg" alt="April" style="width:100px" id="Apr"></td>
-        			<td><img src="May.jpg" alt="May" style="width:100px" id="May"></td>
-   			  	  <td><img src="June.jpg" alt="June" style="width:100px" id="Jun"></td>	
-      			</tr>
-                
-               	<tr>
-        			<td><img src="July.jpg" alt="July" style="width:100px" id="Jul"></td>                 
-        			<td><img src="Aug.jpg" alt="August" style="width:100px" id="Aug"></td>
-		   			<td><img src="Sep.jpg" alt="September" style="width:100px" id="Sep"></td> 
-					<td><img src="Oct.jpg" alt="October" style="width:100px" id="Oct"></td>
-					<td><img src="Nov.jpg" alt="November" style="width:100px" id="Nov"></td>
-   			  	  	<td><img src="Dec.jpg" alt="December" style="width:100px" id="Dec"></td>	
-      			</tr>
-               
-                </tbody>
-			</table>
-		</div>
-        
-	<hr>
-	</div>
+                <ul id="cursor">
+                    <li><a href="#meaning"><img src="January.jpg" style="width:80px" alt="January" onclick="Jan()"></a></li>
+                    <li><a href="#meaning"><img src="Feb.jpg" style="width:80px" alt="=February" onclick="Feb()"></a></li>
+                    <li><a href="#meaning"><img src="Mar.jpg" style="width:80px" alt="March" onclick="Mar()"></a></li>
+                    <li><a href="#meaning"><img src="Apr.jpg" style="width:80px" alt="April" onclick="Apr()"></a></li>
+                    <li><a href="#meaning"><img src="May.jpg"  style="width:80px" alt="May" onclick="May()"></a></li>
+                    <li><a href="#meaning"><img src="June.jpg" style="width:80px" alt="June" onclick="Jun()"></a></li>
+                    <li><a href="#meaning"><img src="July.jpg" style="width:80px" alt="July" onclick="July()"></a></li>
+                    <li><a href="#meaning"><img src="Aug.jpg" style="width:80px" alt="August" onclick="Aug()"></a></li>
+                    <li><a href="#meaning"><img src="Sep.jpg" style="width:80px" alt="September" onclick="Sept()"></a></li>
+                    <li><a href="#meaning"><img src="Oct.jpg" style="width:80px" alt="October" onclick="Oct()"></a></li>
+                    <li><a href="#meaning"><img src="Nov.jpg" style="width:80px" alt="November" onclick="Nov()"></a></li>
+                    <li><a href="#meaning"><img src="Dec.jpg" style="width:80px" alt="December" onclick="Dec()"></a></li>
+                </ul>
 
-<script>
-$(document).ready(function(){
-    $("#Jan").click(function(){
-        $("p#demojan").show();
-    });
-});
+            </div>
 
-$(document).ready(function(){
-    $("#Feb").click(function(){
-        $("p#demofeb").show();
-    });
-});
+            <div class="col-sm-9 text-center" id="meaning">
+                <h1>Birth Month Meaning</h1>
+                <hr class="hrStyle">
+                <p id="show"></p>
+                <p id="backTop"><a href="#months">Back to top</a></p>
 
-$(document).ready(function(){	
-    $("#Mar").click(function(){
-        $("p#demomar").show();
-    });
-});
+            </div>
 
-$(document).ready(function(){	
-    $("#Apr").click(function(){
-        $("p#demoapr").show();
-    });
-});
+        </div>
+    </div>
+</main>
 
-$(document).ready(function(){	
-    $("#May").click(function(){
-        $("p#demomay").show();
-    });
-});
-
-$(document).ready(function(){	
-    $("#Jun").click(function(){
-        $("p#demojun").show();
-    });
-});
-
-$(document).ready(function(){	
-    $("#Jul").click(function(){
-        $("p#demojul").show();
-    });
-});
-
-$(document).ready(function(){	
-    $("#Aug").click(function(){
-        $("p#demoaug").show();
-    });
-});
-
-$(document).ready(function(){	
-    $("#Sep").click(function(){
-        $("p#demosep").show();
-    });
-});
-
-$(document).ready(function(){	
-    $("#Oct").click(function(){
-        $("p#demooct").show();
-    });
-});
-
-$(document).ready(function(){	
-    $("#Nov").click(function(){
-        $("p#demonov").show();
-    });
-});
-
-$(document).ready(function(){	
-    $("#Dec").click(function(){
-        $("p#demodec").show();
-    });
-});
-</script>
-
-	
-	<div class="container"> 
-    
-		<p id="demojan" style="display:none; font-family: cursive, sans-serif" class="text-center">Ambitious and serious<br>Loves to teach and be taught<br>Always looking at people's flaws and weaknesses<br>Likes to criticize<br>Hardworking and productive<br>Smart, neat and organized<br>Sensitive and has deep thoughts<br>Knows how to make others happy<br>Quiet unless excited or tensed<br>Rather reserved<br>Highly attentive<br>Resistant to illnesses but prone to colds<br>Romantic but has difficulties expressing love<br>Loves children<br>Homely person<br>Loyal<br>Needs to improve social abilities<br>Easily jealous</p>  
-
-		<p id="demofeb" style="display:none; font-family: cursive, sans-serif" class="text-center">Abstract thoughts<br>
-Loves reality and abstract<br>Intelligent and clever<br>Changing personality<br>Temperamental<br>Quiet, shy and humble<br>Low self esteem<br>Honest and loyal<br>Determined to reach goals<br>Loves freedom<br>Rebellious when restricted<br>Loves aggressiveness<br>Too sensitive and easily hurt<br>Showing anger easily<br>Dislike unnecessary things<br>Loves making friends but rarely shows it<br>Daring and stubborn<br>Ambitious<br>Realizing dreams and hopes<br>Sharp<br>Loves entertainment and leisure<br>Romantic on the inside not outside<br>Superstitious and ludicrous<br>Spendthrift<br>Learns to show emotions</p>    
-	
-    <p id="demomar" style="display:none; font-family: cursive, sans-serif" class="text-center">Attractive personality<br>Affectionate<br>Shy and reserved<br>Secretive<br>Naturally honest, generous and sympathetic<br>Loves peace and serenity<br>Sensitive to others<br>Loves to serve others<br>Not easily angered<br>Trustworthy<br>Appreciative and returns kindness<br>Observant and assess others<br>Revengeful<br>Loves to dream and fantasize<br>Loves traveling<br>Loves attention<br>Hasty decisions in choosing partners<br>Loves home decors<br>Musically talented<br>Loves special things<br>
-Moody</p>
-    
-    <p id="demoapr" style="display:none; font-family: cursive, sans-serif" class="text-center">Active and dynamic<br>Decisive and haste but tends to regret<br>Attractive and affectionate to oneself<br>Strong mentality<br>Loves attention<br>Diplomatic<br>Consoling<br>Friendly and solves people's problems<br>Brave and fearless<br>Adventurous<br>Loving and caring<br>Suave and generous<br>Emotional<br>Revengeful<br>Aggressive<br>Hasty<br>Good memory<br>Moving<br>Motivate one and the others<br>Sickness usually of the head and chest<br>Easily get too jealous</p> 
-
-		<p id="demomay" style="display:none; font-family: cursive, sans-serif" class="text-center">Stubborn and hard-hearted<br>Strong-willed and highly motivated<br>Sharp thoughts<br>Easily angered<br>Attracts others and loves attention<br>Deep feelings<br>Beautiful physically and mentally<br>Firm standpoint<br>Easily influenced<br>Needs no motivation<br>Easily consoled<br>Systematic (left brain)<br>Loves to dream<br>Strong clairvoyance<br>Understanding<br>Sickness usually in the ear and neck<br>Good imagination<br>Good debating skills<br>Good physical<br>Weak breathing<br>Loves literature and the arts<br>Loves traveling<br>Dislike being at home<br>Restless<br>Not having many children<br>Hardworking<br>High-spirited<br>Spendthrift</p>
-
-		<p id="demojun" style="display:none; font-family: cursive, sans-serif" class="text-center">Thinks far with vision<br>Easily influenced by kindness<br>Polite and soft-spoken<br>Having lots of ideas<br>Sensitive<br>Active mind<br>Hesitating<br>Tends to delay<br>Choosy and always wants the best<br>Temperamental<br>Funny and humorous<br>Loves to joke<br>Good debating skills<br>Talkative<br>Daydreamer<br>Friendly<br>Knows how to make friends<br>Abiding<br>Able to show character<br>Easily hurt<br>Prone to getting colds<br>Loves to dress up<br>Easily bored<br>Fussy<br>Seldom show emotions<br>Takes time to recover when hurt<br>Brand conscious<br>Executive<br>Stubborn</p> 
-
-        <p id="demojul" style="display:none; font-family: cursive, sans-serif" class="text-center">Fun to be with<br>
-Secretive<br>Difficult to fathom and to be understood<br>Quiet unless excited or tensed<br>Takes pride in oneself<br>Has reputation<br>Easily consoled<br>Honest<br>Concern about people's feelings<br>Tactful<br>Friendly<br>Approachable<br>Very emotional<br>Temperamental and unpredictable<br>Moody and easily hurt<br>Witty and starkly<br>Sentimental<br>Not revengeful<br>Forgiving but never forgets<br>Dislike nonsensical and unnecessary things<br>Guides others physically and mentally<br>Sensitive and forms impressions carefully<br>Caring and loving<br>Treats others equally<br>Strong sense of sympathy<br>Wary and sharp<br>Judge people through observations<br>Hardworking<br>No difficulties in studying<br>Loves to be alone<br>Always broods about the past and the old friends<br>Likes to be quiet<br>Homely person<br>Waits for friends<br>Never looks for friends<br>Not aggressive unless provoked<br>Prone to having stomach and dieting problems<br>Loves to be loved<br>Easily hurt but takes long to recover<br>Overly concerned<br>Puts in effort in work</p>
-
-        <p id="demoaug" style="display:none; font-family: cursive, sans-serif" class="text-center">Loves to joke
-Attractive<br>Suave and caring<br>Brave and fearless<br>Firm and has leadership qualities<br>Knows how to console others<br>Too generous and egoistic<br>Tacked high pride of oneself<br>Thirsty for praises<br>Extraordinary spirit<br>Easily angered<br>Angry when provoked<br>Easily jealous<br>Observant<br>Careful and cautious<br>Thinks quickly Independent thoughts<br>Loves to lead and to be led<br>Loves to dream<br>Talented in the arts, music and defense<br>Sensitive but not petty<br>Learns to relax<br>Hasty and rushy<br>Romantic<br>Loving and caring<br>Loves to make friends</p>
-
-        <p id="demosep" style="display:none; font-family: cursive, sans-serif" class="text-center">Suave and compromising<br>Careful, cautious and organized<br>Likes to point out people's mistakes<br>Quiet but able to talk well<br>Calm and cool<br>Kind and sympathetic<br>Concerned and detailed<br>Trustworthy, loyal and honest<br>Does work well<br>Sensitive<br>Thinking<br>Good memory<br>Clever and knowledgeable<br>Loves to look for information<br>Must control oneself when criticizing<br>Able to motivate oneself<br>Understanding<br>Secretive<br>Loves sports, leisure and traveling<br>Hardly shows emotions<br>Tends to bottle up feelings<br>Choosy especially in relationships<br>Loves wide things<br>Systematic</p>
-        
-        <p id="demooct" style="display:none; font-family: cursive, sans-serif" class="text-center">Loves to chat<br>Loves those who loves him<br>Loves to takes things at the center<br>Attractive and suave<br>Inner and physical beauty<br>Sympathetic<br>Treats friends importantly<br>Always making friends<br>Easily hurt but recovers easily<br>Bad tempered<br>Selfish<br>Seldom helps unless asked<br>Daydreamer<br>Very opinionated<br>Does not care of what others think<br>Emotional<br>Decisive<br>Strong clairvoyance<br>Loves to travel, the arts and literature<br>Soft-spoken, loving and caring Romantic<br>Touchy and easily jealous<br>Concerned
-Loves outdoors<br>Just and fair<br>Spendthrift and easily influenced<br>Easily lose confidence</p>
-
-        <p id="demonov" style="display:none; font-family: cursive, sans-serif" class="text-center">Have a lot of ideas<br>Difficult to fathom<br>Thinks forward<br>Unique and brilliant<br>Extraordinary ideas<br>Sharp thinking<br>Fine and strong clairvoyance<br>Can become good doctors<br>Careful and cautious<br>Dynamic in personality<br>Secretive<br>Inquisitive<br>Knows how to dig secrets<br>Always thinking<br>Less talkative but amiable<br>Brave and generous<br>Patient<br>Stubborn and hard-hearted<br>If there is a will, there is a way<br>Determined<br>Never give up<br>Hardly become angry unless provoked<br>Loves to be alone<br>Thinks differently from others<br>Sharp-minded<br>Motivates oneself<br>Does not appreciates praises<br>High-spirited<br>Well-built and tough<br>Deep love and emotions<br>Romantic<br>Uncertain in relationships<br>Homely<br>Hardworking<br>High abilities<br>Trustworthy<br>Honest and keeps secrets<br>Not able to control emotions<br>Unpredictable</p>
-        
-        <p id="demodec" style="display:none; font-family: cursive, sans-serif" class="text-center">Loyal and generous<br>Patriotic
-Active in games and interactions<br>Impatient and hasty<br>Ambitious<br>Influential in organizations<br>Fun to be with<br>Loves to socialize<br>Loves praises<br>Loves attention<br>Loves to be loved<br>Honest and trustworthy<br>Not pretending<br>Short tempered
-Changing personality<br>Not egoistic<br>Tacked high pride in oneself<br>Hates restrictions<br>Loves to joke<br>Good sense of humor
-Logical</p>       
-
-    </div>  
-    <div>
-    	<p>&nbsp;</p>
-        <p>&nbsp;</p> 
-	</div>
-</section>
-
-
-<!-- Content ends here--> 
-
-<!-- Footer starts here-->
-<footer class="text-center">
-	<div class="container">
-    	<div class="row">
-      		<div class="col-xs-12">
-        		<p>Copyright © Bernadette Engleman. All rights reserved.</p>
-      		</div>
-    	</div>
-  	</div>
+<footer class="container-fluid text-center">
+    <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
 </footer>
-<!-- Footer ends here-->
 
 </body>
+
+<script type="text/javascript" src="birth.js"></script>
+
 </html>

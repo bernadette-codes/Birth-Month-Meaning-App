@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    position: relative;
+    min-height: 93%;                                                                /* Check */
+}
+
+body {
+    display: block;
+    background: url(background.jpg) center center / cover no-repeat fixed;
+    padding: 0;
+    margin: 0 0 40px;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: 30px;
+}
+
+.navbar {
+    min-height:30px !important;
+}
+
+a {
+    color: #404040 !important;
+    border-bottom: 1px solid #404040;
+}
+
+a:hover {
+    font-weight: bold !important;
+}
+
+.sidenav {
+    height: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+h3 {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+#cursor {
+    cursor: pointer;
+}
+
+ul {
+    padding-right: 20px !important;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    padding: 3px;
+}
+
+.hrStyle {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+p {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+#backTop {
+    padding-top: 20px;
+    visibility: hidden;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+

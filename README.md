@@ -1,3 +1,3 @@
-# Birth-Month-Meaning
-Birth Month Meaning
+# Birth-Month-Meaning App
+Birth Month Meaning App
 

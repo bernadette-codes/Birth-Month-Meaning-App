@@ -1,10 +1,10 @@
 /**
- * Created by Bernadette on 2/8/2016.
+ * Created by Bernadette on 3/26/2016.
  */
 
 // Copyright Year
-var d = new Date();
-var n = d.getFullYear();
+var d = new Date(),
+    n = d.getFullYear();
 document.getElementById("year").innerHTML = n;
 
 function Jan() {

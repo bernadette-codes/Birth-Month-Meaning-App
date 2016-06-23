@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Bernadette Engleman">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Birth Month Meaning</title>
 </head>
 
@@ -18,18 +17,15 @@
 <main id="months">
     <!-- Home -->
     <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="http://www.bernadetteengleman.com/">Home</a><br>
-            </div>
+        <div class="container-fluid navbar-header">
+            <a class="navbar-brand" href="http://www.bernadetteengleman.com/">Home</a><br>
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row content">
+    <div class="container-fluid row content">
 
-            <!-- Side bar -->
-            <div class="col-sm-3 sidenav text-center">
+        <!-- Side bar -->
+        <div class="col-sm-3 sidenav text-center">
 
                 <h3>Select Your Birth Month:</h3>
 
@@ -50,7 +46,7 @@
 
             </div>
 
-            <div class="col-sm-9 text-center" id="meaning">
+        <div class="col-sm-9 text-center" id="meaning">
                 <h1>Birth Month Meaning</h1>
                 <hr class="hrStyle">
                 <p id="show"></p>
@@ -58,17 +54,15 @@
 
             </div>
 
-        </div>
     </div>
 </main>
 
 <footer class="container-fluid text-center">
-    <div>
-        <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
-    </div>
+    <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
 </footer>
 
-<script type="text/javascript" src="birth.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="birth.js"></script>
 
 </body>
 

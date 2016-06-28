@@ -13,31 +13,32 @@ body {
     margin: 0 0 40px;
 }
 
-.navbar-nav > li > a, .navbar-brand {
-    padding-top:5px !important; padding-bottom:0 !important;
+main#months .navbar {
+    min-height:30px;
+}
+
+main#months a.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 0;
     height: 30px;
 }
 
-.navbar {
-    min-height:30px !important;
-}
-
-a {
-    color: #404040 !important;
+main#months a {
+    color: #404040;
     border-bottom: 1px solid #404040;
 }
 
-a:hover {
-    font-weight: bold !important;
+main#months a:hover {
+    font-weight: bold;
 }
 
-.sidenav {
+main#months div.sidenav {
     height: 100%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-h3 {
+main#months div.sidenav h3 {
     margin-top: -5px;
     margin-bottom: 20px;
     padding-left: 15px;
@@ -47,8 +48,8 @@ h3 {
     cursor: pointer;
 }
 
-ul {
-    padding-right: 20px !important;
+ul#cursor {
+    padding-right: 20px;
 }
 
 li {

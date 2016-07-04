@@ -3,7 +3,7 @@
 
 html {
     position: relative;
-    min-height: 93%;                                                                /* Check */
+    min-height: 93%;
 }
 
 body {
@@ -13,16 +13,18 @@ body {
     margin: 0 0 40px;
 }
 
+/* Home Link */
 main#months .navbar {
     min-height:30px;
 }
 
 main#months a.navbar-brand {
+    height: 30px;
     padding-top: 5px;
     padding-bottom: 0;
-    height: 30px;
 }
 
+/* All Links */
 main#months a {
     color: #404040;
     border-bottom: 1px solid #404040;
@@ -32,6 +34,7 @@ main#months a:hover {
     font-weight: bold;
 }
 
+/* Months Menu */
 main#months div.sidenav {
     height: 100%;
     padding-left: 0;
@@ -58,6 +61,7 @@ li {
     padding: 3px;
 }
 
+/* Title Divider */
 .hrStyle {
     height: 10px;
     border: 0;

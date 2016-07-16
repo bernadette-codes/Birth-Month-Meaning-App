@@ -14,45 +14,42 @@ body {
 }
 
 /* Home Link */
-main#months .navbar {
+#months .navbar {
     min-height:30px;
 }
 
-main#months a.navbar-brand {
+a.navbar-brand {
     height: 30px;
     padding-top: 5px;
     padding-bottom: 0;
 }
 
 /* All Links */
-main#months a {
+#months a {
     color: #404040;
     border-bottom: 1px solid #404040;
 }
 
-main#months a:hover {
+#months a:hover {
     font-weight: bold;
 }
 
 /* Months Menu */
-main#months div.sidenav {
+.sidenav {
     height: 100%;
     padding-left: 0;
     padding-right: 0;
 }
 
-main#months div.sidenav h3 {
+.sidenav h3 {
     margin-top: -5px;
     margin-bottom: 20px;
     padding-left: 15px;
 }
 
-#cursor {
-    cursor: pointer;
-}
-
-ul#cursor {
+.cursor {
     padding-right: 20px;
+    cursor: pointer;
 }
 
 li {
@@ -61,7 +58,11 @@ li {
     padding: 3px;
 }
 
-/* Title Divider */
+.cursor img {
+    width:80px;
+}
+
+    /* Title Divider */
 .hrStyle {
     height: 10px;
     border: 0;

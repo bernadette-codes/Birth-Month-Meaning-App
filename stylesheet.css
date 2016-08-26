@@ -1,87 +1,74 @@
-@charset "utf-8";
-/* CSS Document */
+<!DOCTYPE html>
+<html lang="en">
 
-html {
-    position: relative;
-    min-height: 93%;
-}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birth Month Meaning</title>
+    <meta name="description" content="shows the meaning of your birth month">
+    <meta name="keywords" content="birth month, birth meaning, month meaning">
+    <meta name="author" content="Bernadette Engleman">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
 
-body {
-    display: block;
-    background: url(background.jpg) center center / cover no-repeat fixed;
-    padding: 0;
-    margin: 0 0 40px;
-}
+<body>
 
-/* Home Link */
-#months .navbar {
-    min-height:30px;
-}
+<main id="months">
+    <!-- Home Link-->
+    <nav class="navbar container-fluid">
+        <a class="navbar-brand" href="http://www.bernadetteengleman.com/">Home</a><br>
+    </nav>
 
-a.navbar-brand {
-    height: 30px;
-    padding-top: 5px;
-    padding-bottom: 0;
-}
+    <div class="container-fluid row content">
 
-/* All Links */
-#months a {
-    color: #404040;
-    border-bottom: 1px solid #404040;
-}
+        <!-- Side bar -->
+        <div class="col-sm-3 sidenav text-center">
 
-#months a:hover {
-    font-weight: bold;
-}
+            <h3>Select Your Birth Month:</h3>
 
-/* Months Menu */
-.sidenav {
-    height: 100%;
-    padding-left: 0;
-    padding-right: 0;
-}
+            <ul class="cursor">
+                <li><img src="January.jpg" alt="January" id="Jan" width="80"></li>
+                <li><img src="Feb.jpg" alt="=February" id="Feb" width="80"></li>
+                <li><img src="Mar.jpg" alt="March" id="Mar" width="80"></li>
+                <li><img src="Apr.jpg" alt="April" id="Apr" width="80"></li>
+                <li><img src="May.jpg"  alt="May" id="May" width="80"></li>
+                <li><img src="June.jpg" alt="June" id="Jun" width="80"></li>
+                <li><img src="July.jpg" alt="July" id="July" width="80"></li>
+                <li><img src="Aug.jpg" alt="August" id="Aug" width="80"></li>
+                <li><img src="Sep.jpg" alt="September" id="Sept" width="80"></li>
+                <li><img src="Oct.jpg" alt="October" id="Oct" width="80"></li>
+                <li><img src="Nov.jpg" alt="November" id="Nov" width="80"></li>
+                <li><img src="Dec.jpg" alt="December" id="Dec" width="80"></li>
+            </ul>
 
-.sidenav h3 {
-    margin-top: -5px;
-    margin-bottom: 20px;
-    padding-left: 15px;
-}
+        </div>
 
-.cursor {
-    padding-right: 20px;
-    cursor: pointer;
-}
+        <!-- Main Pane -->
+        <div class="col-sm-9 text-center">
+            <h1>Birth Month Meaning</h1>
 
-li {
-    display: inline-block;
-    list-style: none;
-    padding: 3px;
-}
+            <hr class="hrStyle">
 
-    /* Title Divider */
-.hrStyle {
-    height: 10px;
-    border: 0;
-    box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}
+            <p id="show"></p>
+            <p id="backTop">
+                <a href="#months">Back to top</a>
+            </p>
 
-p {
-    display: block;
-    text-align: center;
-    padding-top: 15px;
-    font-size: 16px;
-}
+        </div>
 
-#backTop {
-    padding-top: 20px;
-    visibility: hidden;
-}
+    </div>
+</main>
 
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    padding-top: 30px;
-}
+<footer class="container-fluid text-center">
+    <p><small>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</small></p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="birth.js"></script>
+
+</body>
+
+</html>

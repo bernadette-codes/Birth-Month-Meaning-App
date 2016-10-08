@@ -23,50 +23,17 @@ function ShowMeanings(month) {
     document.getElementById("backTop").style.visibility="visible";
 }
 
-$("#Jan").on('click', function() {
-    ShowMeanings(enero);
-});
-
-$("#Feb").on('click', function() {
-    ShowMeanings(febrero);
-});
-
-$("#Mar").on('click', function() {
-    ShowMeanings(marzo);
-});
-
-$("#Apr").on('click', function() {
-    ShowMeanings(abril);
-});
-
-$("#May").on('click', function() {
-    ShowMeanings(mayo);
-});
-
-$("#Jun").on('click', function() {
-    ShowMeanings(junio);
-});
-
-$("#July").on('click', function() {
-    ShowMeanings(julio);
-});
-
-$("#Aug").on('click', function() {
-    ShowMeanings(agosto);
-});
-
-$("#Sept").on('click', function() {
-    ShowMeanings(septiembre);
-});
-
-$("#Oct").on('click', function() {
-    ShowMeanings(octubre);
-});
-
-$("#Nov").on('click', function() {
-    ShowMeanings(noviembre);
-});
-
-$("#Dec").on('click', function() {
-    ShowMeanings(diciembre);
+$(document).ready(function() {
+    $("#Jan").on('click', function() { ShowMeanings(enero); });
+    $("#Feb").on('click', function() { ShowMeanings(febrero); });
+    $("#Mar").on('click', function() { ShowMeanings(marzo); });
+    $("#Apr").on('click', function() { ShowMeanings(abril); });
+    $("#May").on('click', function() { ShowMeanings(mayo); });
+    $("#Jun").on('click', function() { ShowMeanings(junio); });
+    $("#July").on('click', function() { ShowMeanings(julio); });
+    $("#Aug").on('click', function() { ShowMeanings(agosto); });
+    $("#Sept").on('click', function() { ShowMeanings(septiembre); });
+    $("#Oct").on('click', function() { ShowMeanings(octubre); });
+    $("#Nov").on('click', function() { ShowMeanings(noviembre); });
+    $("#Dec").on('click', function() { ShowMeanings(diciembre); });
 });

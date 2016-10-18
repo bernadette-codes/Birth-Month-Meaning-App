@@ -18,22 +18,22 @@ var enero = "Ambitious and serious<br>Loves to teach and be taught<br>Always loo
     diciembre = "Loyal and generous<br>Patriotic<br>Active in games and interactions<br>Impatient and hasty<br>Ambitious<br>Influential in organizations<br>Fun to be with<br>Loves to socialize<br>Loves praises<br>Loves attention<br>Loves to be loved<br>Honest and trustworthy<br>Not pretending<br>Short tempered<br>Changing personality<br>Not egoistic<br>Tacked high pride in oneself<br>Hates restrictions<br>Loves to joke<br>Good sense of humor<br>Logical";
 
 // Show Meanings
-function ShowMeanings(month) {
-    document.getElementById("show").innerHTML = month;
-    document.getElementById("backTop").style.visibility="visible";
+function showMeanings(monthID, month) {
+    $(monthID).on('click', function() {
+        document.getElementById("show").innerHTML = month;
+        document.getElementById("backTop").style.visibility = "visible";
+    });
 }
 
-$(document).ready(function() {
-    $("#Jan").on('click', function() { ShowMeanings(enero); });
-    $("#Feb").on('click', function() { ShowMeanings(febrero); });
-    $("#Mar").on('click', function() { ShowMeanings(marzo); });
-    $("#Apr").on('click', function() { ShowMeanings(abril); });
-    $("#May").on('click', function() { ShowMeanings(mayo); });
-    $("#Jun").on('click', function() { ShowMeanings(junio); });
-    $("#July").on('click', function() { ShowMeanings(julio); });
-    $("#Aug").on('click', function() { ShowMeanings(agosto); });
-    $("#Sept").on('click', function() { ShowMeanings(septiembre); });
-    $("#Oct").on('click', function() { ShowMeanings(octubre); });
-    $("#Nov").on('click', function() { ShowMeanings(noviembre); });
-    $("#Dec").on('click', function() { ShowMeanings(diciembre); });
-});
+showMeanings("#Jan", enero);
+showMeanings("#Feb", febrero);
+showMeanings("#Mar", marzo);
+showMeanings("#Apr", abril);
+showMeanings("#May", mayo);
+showMeanings("#Jun", junio);
+showMeanings("#July", julio);
+showMeanings("#Aug", agosto);
+showMeanings("#Sept", septiembre);
+showMeanings("#Oct", octubre);
+showMeanings("#Nov", noviembre);
+showMeanings("#Dec", diciembre);

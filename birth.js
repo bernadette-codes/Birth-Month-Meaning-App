@@ -3,7 +3,7 @@ var d = new Date(),
     n = d.getFullYear();
 document.getElementById("year").innerHTML = n;
 
-// Meanings
+// Birth Month Meanings
 var enero = "Ambitious and serious<br>Loves to teach and be taught<br>Always looking at people's flaws and weaknesses<br>Likes to criticize<br>Hardworking and productive<br>Smart, neat and organized<br>Sensitive and has deep thoughts<br>Knows how to make others happy<br>Quiet unless excited or tensed<br>Rather reserved<br>Highly attentive<br>Resistant to illnesses but prone to colds<br>Romantic but has difficulties expressing love<br>Loves children<br>Homely person<br>Loyal<br>Needs to improve social abilities<br>Easily jealous",
     febrero = "Abstract thoughts<br>Loves reality and abstract<br>Intelligent and clever<br>Changing personality<br>Temperamental<br>Quiet, shy and humble<br>Low self esteem<br>Honest and loyal<br>Determined to reach goals<br>Loves freedom<br>Rebellious when restricted<br>Loves aggressiveness<br>Too sensitive and easily hurt<br>Showing anger easily<br>Dislike unnecessary things<br>Loves making friends but rarely shows it<br>Daring and stubborn<br>Ambitious<br>Realizing dreams and hopes<br>Sharp<br>Loves entertainment and leisure<br>Romantic on the inside not outside<br>Superstitious and ludicrous<br>Spendthrift<br>Learns to show emotions",
     marzo = "Attractive personality<br>Affectionate<br>Shy and reserved<br>Secretive<br>Naturally honest, generous and sympathetic<br>Loves peace and serenity<br>Sensitive to others<br>Loves to serve others<br>Not easily angered<br>Trustworthy<br>Appreciative and returns kindness<br>Observant and assess others<br>Revengeful<br>Loves to dream and fantasize<br>Loves traveling<br>Loves attention<br>Hasty decisions in choosing partners<br>Loves home decors<br>Musically talented<br>Loves special things<br>Moody",
@@ -17,7 +17,7 @@ var enero = "Ambitious and serious<br>Loves to teach and be taught<br>Always loo
     noviembre = "Have a lot of ideas<br>Difficult to fathom<br>Thinks forward<br>Unique and brilliant<br>Extraordinary ideas<br>Sharp thinking<br>Fine and strong clairvoyance<br>Can become good doctors<br>Careful and cautious<br>Dynamic in personality<br>Secretive<br>Inquisitive<br>Knows how to dig secrets<br>Always thinking<br>Less talkative but amiable<br>Brave and generous<br>Patient<br>Stubborn and hard-hearted<br>If there is a will, there is a way<br>Determined<br>Never give up<br>Hardly become angry unless provoked<br>Loves to be alone<br>Thinks differently from others<br>Sharp-minded<br>Motivates oneself<br>Does not appreciates praises<br>High-spirited<br>Well-built and tough<br>Deep love and emotions<br>Romantic<br>Uncertain in relationships<br>Homely<br>Hardworking<br>High abilities<br>Trustworthy<br>Honest and keeps secrets<br>Not able to control emotions<br>Unpredictable",
     diciembre = "Loyal and generous<br>Patriotic<br>Active in games and interactions<br>Impatient and hasty<br>Ambitious<br>Influential in organizations<br>Fun to be with<br>Loves to socialize<br>Loves praises<br>Loves attention<br>Loves to be loved<br>Honest and trustworthy<br>Not pretending<br>Short tempered<br>Changing personality<br>Not egoistic<br>Tacked high pride in oneself<br>Hates restrictions<br>Loves to joke<br>Good sense of humor<br>Logical";
 
-// Show Meanings
+// Show Meanings When Birth Month is Clicked
 function showMeanings(monthID, month) {
     $(monthID).on('click', function() {
         document.getElementById("show").innerHTML = month;

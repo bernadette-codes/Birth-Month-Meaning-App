@@ -19,12 +19,11 @@ var enero = "Ambitious and serious<br>Loves to teach and be taught<br>Always loo
 
 // Show Meanings When Birth Month is Clicked
 function showMeanings(monthID, month) {
-    var show = document.getElementById("show"),
-        backTop = document.getElementById("backTop");
-
+    var show = $('#show'),
+        backTop = $('#backTop');
     $(monthID).on('click', function() {
-        show.innerHTML = month;
-        backTop.style.visibility = "visible";
+        show.html(month);
+        backTop.removeClass('hideBackTop').addClass('showBackTop');
     });
 }
 

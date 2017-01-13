@@ -9,6 +9,7 @@
     <meta name="description" content="shows the meaning of your birth month">
     <meta name="keywords" content="birth month, birth meaning, month meaning">
     <meta name="author" content="Bernadette Engleman">
+    <link rel="shortcut icon" href="../../img/beIcon.png">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -18,17 +19,14 @@
 <main id="months">
     <!-- Home Link-->
     <nav class="navbar container-fluid">
-        <a class="navbar-brand" href="http://www.bernadetteengleman.com/">Home</a><br>
+        <a class="navbar-brand" href="../../index.html">Home</a><br>
     </nav>
 
     <div class="container-fluid row content">
-
         <!-- Side bar -->
         <div class="col-sm-3 sidenav text-center">
-
-            <h3>Select Your Birth Month:</h3>
-
-            <ul class="cursor">
+            <p>Select Your Birth Month:</p>
+            <ul class="selectMonth">
                 <li><img src="img/january.jpg" alt="January" id="Jan" width="80"></li>
                 <li><img src="img/feb.jpg" alt="=February" id="Feb" width="80"></li>
                 <li><img src="img/mar.jpg" alt="March" id="Mar" width="80"></li>
@@ -42,22 +40,17 @@
                 <li><img src="img/nov.jpg" alt="November" id="Nov" width="80"></li>
                 <li><img src="img/dec.jpg" alt="December" id="Dec" width="80"></li>
             </ul>
-
         </div>
 
         <!-- Main Pane -->
-        <div class="col-sm-9 text-center">
+        <div class="col-sm-9 text-center mainContent">
             <h1>Birth Month Meaning</h1>
-
             <hr class="hrStyle">
-
             <p id="show"></p>
             <p id="backTop" class="hideBackTop">
                 <a href="#months">Back to top</a>
             </p>
-
         </div>
-
     </div>
 </main>
 

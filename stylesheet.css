@@ -29,8 +29,10 @@ a.navbar-brand {
     color: #404040;
 }
 
-#months a:hover {
+#months a:hover,
+#months a:active {
     font-weight: bold;
+    outline: none;
 }
 
 /* Months Menu */

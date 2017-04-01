@@ -1,5 +1,19 @@
-Birth Month Meaning App
 
-Description: This Website App will show you the meaning of your birth month. 
+**Birth Month Meaning App**
+--------------------
 
-Link: http://www.bernadetteengleman.com/Apps/Birth%20Month%20Meaning/birthmonthmeaning.html
+[Birth Month Meaning App](http://www.bernadetteengleman.com/Apps/Birth%20Month%20Meaning/birthmonthmeaning.html) shows the meaning of your birth month.
+
+
+![Birth Month Meaning Webpage](http://www.bernadetteengleman.com/img/portfolio/birthmonththumbnail.jpg)
+
+
+ - It is a single-page, responsive application programmed with JavaScript
+
+**Front-End:**
+
+ - JavaScript
+ - jQuery
+ - Bootstrap
+ - CSS
+ - HTML

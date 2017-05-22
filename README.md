@@ -8,7 +8,7 @@
 ![Birth Month Meaning Webpage](http://www.bernadetteengleman.com/img/portfolio/birthmonththumbnail.jpg)
 
 
- - It is a single-page, responsive application programmed with JavaScript
+ - It is a single-page, responsive application programmed with jQuery
 
 **Front-End:**
 
